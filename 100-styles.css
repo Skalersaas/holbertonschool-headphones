@@ -186,25 +186,32 @@ header {
 }
 
 .polygon {
+    margin-bottom: 2rem;
     width: 25%;
     position: relative;
     text-align: center;
-    padding-bottom: 2rem;
 }
-.polygon > p {
-    position: absolute;
-    font-size: var(--font-size-S);
-    width: 6rem;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.penta {
+    margin: auto;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: var(--color-red);
+    height: auto;
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        81% 100%,
+        19% 100%,
+        0 38% 
+    );
 }
-.polygon > h1 {
-    font-size: 48px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.polygon  p {
+    font-size: 14px;
+}
+.polygon  h1 {
+    font-size: 46px;
+    margin: 2rem auto 1rem auto;
 }
 /* 5. Contact us */
 .contactUs {
